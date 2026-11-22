@@ -20,7 +20,7 @@ def main() -> None:
     os.makedirs(output_dir, exist_ok=True)
     path = os.path.join(output_dir, "entry.txt")
     with open(path, "w", encoding="utf-8") as handle:
-        handle.write(ENTRY)
+        handle.write(ENTRY + "\n")
 
 
 if __name__ == "__main__":
